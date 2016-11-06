@@ -1,0 +1,68 @@
+
+.breakpoint-indicator {
+    padding: 10px;
+    border: 1px solid red;
+    position: fixed;
+    top: 3px;
+    right: 3px;
+
+  
+}
+
+
+@include desktop-m {
+	.breakpoint-indicator::before {
+		content: "#{$desktop-m}";
+	}
+}
+
+@include desktop-l {
+	.breakpoint-indicator::before {
+		content: "#{$desktop-l}";
+	}
+}
+@include desktop-l {
+	.breakpoint-indicator::before {
+		content: "> #{$desktop-xl}";
+	}
+}
+
+@include desktop-l {
+	nav.navigation {
+		background-color: $blue;
+	}
+}
+
+
+
+
+
+
+nav.navigation {
+	padding: 10px;
+	border-bottom: 1px solid gray;
+	position: fixed;
+	width: 100%;
+
+}
+
+.container {
+	padding: 50px 10px 10px 10px;
+
+
+}
+
+#footer {
+	background-color: $light-gray;
+	height: 200px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+@include desktop-l {
+	#footer {
+		background-color: $red;
+	}
+}
