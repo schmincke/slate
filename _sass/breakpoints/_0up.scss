@@ -1,0 +1,50 @@
+
+.breakpoint-indicator {
+	display: visible;
+    padding: 10px;
+    position: fixed;
+    top: 3px;
+    right: 3px;
+    z-index: 10;
+    background-color: yellow;
+    font-weight: bold;
+
+    &:before{
+    	content: '0-480px';
+    }
+  
+}
+
+/* ------------------ TOP NAVIGATION ------------------*/
+
+nav.navigation {
+	padding: 20px 10px 40px 10px;
+	border-bottom: 1px solid gray;
+	position: relative;
+	width: 100%;
+
+
+}
+
+/* --------------------- TCONTENT ---------------------*/
+
+
+.container {
+	padding: 50px 10px 10px 10px;
+
+
+}
+
+
+/* --------------------- FOOTER -----------------------*/
+
+
+#footer {
+	background-color: $light-gray;
+	height: 200px;
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+

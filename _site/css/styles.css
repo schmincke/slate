@@ -463,46 +463,6 @@ a:active {
 .clearfix:after {
   clear: both; }
 
-/* =========================================================== - IMPORT DESIGN - ======================================================== */
-.breakpoint-indicator {
-  padding: 10px;
-  border: 1px solid red;
-  position: fixed;
-  top: 3px;
-  right: 3px; }
-
-@media (min-width: 1024px) {
-  .breakpoint-indicator::before {
-    content: "1024px"; } }
-@media (min-width: 1100px) {
-  .breakpoint-indicator::before {
-    content: "1100px"; } }
-@media (min-width: 1100px) {
-  .breakpoint-indicator::before {
-    content: "> 1900px"; } }
-@media (min-width: 1100px) {
-  nav.navigation {
-    background-color: #2E535B; } }
-nav.navigation {
-  padding: 10px;
-  border-bottom: 1px solid gray;
-  position: fixed;
-  width: 100%; }
-
-.container {
-  padding: 50px 10px 10px 10px; }
-
-#footer {
-  background-color: #7d7d7d;
-  height: 200px;
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  width: 100%; }
-
-@media (min-width: 1100px) {
-  #footer {
-    background-color: #D94755; } }
 /* ########################################################  - IMPORT COMPONENT FILES - ######################################################## */
 /* ============================================================= - IMPORT BUTTONS - ============================================================ */
 .btn {
@@ -517,3 +477,54 @@ nav.navigation {
   width: 100%;
   font-size: 1.3em;
   transition: all .2s ease; }
+
+/* ######################################################## - IMPORT BREAKPOINTS - ######################################################## */
+/* ======================================================== - BASE DESIGN (MOBILE) - ====================================================== */
+.breakpoint-indicator {
+  display: visible;
+  padding: 10px;
+  position: fixed;
+  top: 3px;
+  right: 3px;
+  z-index: 10;
+  background-color: yellow;
+  font-weight: bold; }
+  .breakpoint-indicator:before {
+    content: '0-480px'; }
+
+/* ------------------ TOP NAVIGATION ------------------*/
+nav.navigation {
+  padding: 20px 10px 40px 10px;
+  border-bottom: 1px solid gray;
+  position: relative;
+  width: 100%; }
+
+/* --------------------- TCONTENT ---------------------*/
+.container {
+  padding: 50px 10px 10px 10px; }
+
+/* --------------------- FOOTER -----------------------*/
+#footer {
+  background-color: #7d7d7d;
+  height: 200px;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  width: 100%; }
+
+/* ========================================================== - LARGER MOBILE - =========================================================== */
+@media only screen and (min-width: 481px) {
+  .breakpoint-indicator::before {
+    content: "+480px"; } }
+/* ==================================================== - TABLETS & SMALLER LAPTOPS - ===================================================== */
+@media only screen and (min-width: 768px) {
+  .breakpoint-indicator::before {
+    content: "+768px"; } }
+/* ============================================================= - DESKTOP - ============================================================== */
+@media only screen and (min-width: 1030px) {
+  .breakpoint-indicator::before {
+    content: "+1030px"; } }
+/* ========================================================== - LARGE DESKTOP - =========================================================== */
+@media only screen and (min-width: 1240px) {
+  .breakpoint-indicator::before {
+    content: "+1240px"; } }
