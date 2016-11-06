@@ -8,5 +8,4 @@ paginate: 10
 markdown: rdiscount
 permalink: pretty
 
-gems: [jekyll-paginate]
 
