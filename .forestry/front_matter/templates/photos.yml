@@ -1,0 +1,17 @@
+---
+label: Photos
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: titel
+  label: Titel
+  description: Titel of photo
+  config:
+    required: true
+- type: textarea
+  config:
+    required: true
+  label: Content
+  name: content
+  description: Der Inhalt
