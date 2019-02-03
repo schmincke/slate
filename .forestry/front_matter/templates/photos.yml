@@ -15,3 +15,5 @@ fields:
   label: Content
   name: content
   description: Der Inhalt
+pages:
+- _posts/marc.md
